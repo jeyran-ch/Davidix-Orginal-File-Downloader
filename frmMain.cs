@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Davidix_Orginal_File_Downloader
+namespace Davidix_Original_File_Downloader
 {
     public partial class Main : Form
     {

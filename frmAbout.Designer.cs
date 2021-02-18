@@ -1,4 +1,4 @@
-﻿namespace Davidix_Orginal_File_Downloader
+﻿namespace Davidix_Original_File_Downloader
 {
     partial class frmAbout
     {

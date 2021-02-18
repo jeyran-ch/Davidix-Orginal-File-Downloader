@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Davidix_Orginal_File_Downloader.Properties
+namespace Davidix_Original_File_Downloader.Properties
 {
 
 
