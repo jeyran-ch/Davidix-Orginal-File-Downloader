@@ -61,10 +61,6 @@ namespace Davidix_Original_File_Downloader
             Application.Exit();
         }
 
-        private void showToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
 
         private void aboutToolStripMenuItem1_Click(object sender, EventArgs e)
         {

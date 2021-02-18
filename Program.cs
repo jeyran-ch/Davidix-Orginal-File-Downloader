@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading.Tasks;
@@ -7,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Davidix_Original_File_Downloader
 {
-    static class Program
+     class Program
     {
-        public static string dir, src, fltr;
+
 
         private static void HideConsoleWindow()
         {
@@ -47,7 +48,7 @@ namespace Davidix_Original_File_Downloader
 
                     case "CUI":
                     case "cui":
-                        StartCLI();
+                        CLI_cmd.StartCLI();
                         break;
 
 
@@ -55,7 +56,7 @@ namespace Davidix_Original_File_Downloader
 
 
                     default:
-                        StartCLI();
+                        CLI_cmd.StartCLI();
                         break;
                 }
             }
@@ -74,67 +75,6 @@ namespace Davidix_Original_File_Downloader
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
-        }
-
-        public static void StartCLI()
-        {
-            Console.WriteLine("src - dir - fltr");
-            string cmd = Console.ReadLine().ToLower();
-            switch (cmd)
-            {
-                case "src":
-                    getSRC();
-                    break;
-                /*************************/
-
-                case "dir":
-                    getDIR();
-                    break;
-                /*************************/
-
-                case "fltr":
-                    getFLTR();
-                    break;
-                /*************************/
-
-
-
-
-                case "exit":
-                case "q":
-                    Application.Exit();
-                    break;
-
-
-
-
-                default:
-                    break;
-            }
-        }
-
-        public static void getSRC() 
-        {
-            Console.WriteLine("Enter Src");
-            src = Console.ReadLine();
-            Console.WriteLine("Src => "+src);
-            StartCLI();
-        }
-
-        public static void getDIR()
-        {
-            Console.WriteLine("Enter Dir");
-            src = Console.ReadLine();
-            Console.WriteLine("Dir => " + dir);
-            StartCLI();
-        }
-
-        public static void getFLTR()
-        {
-            Console.WriteLine("Enter Fltr");
-            src = Console.ReadLine();
-            Console.WriteLine("Fltr => " + fltr);
-            StartCLI();
         }
 
 
