@@ -52,9 +52,6 @@ namespace Davidix_Original_File_Downloader
                         break;
 
 
-
-
-
                     default:
                         CLI_cmd.StartCLI();
                         break;
@@ -64,9 +61,6 @@ namespace Davidix_Original_File_Downloader
             {
                 StartGUI();
             }
-
-            
-
 
         }
         public static void StartGUI()
