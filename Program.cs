@@ -79,13 +79,26 @@ namespace Davidix_Original_File_Downloader
         public static void StartCLI()
         {
             Console.WriteLine("src - dir - fltr");
-            string cmd = Console.ReadLine();
+            string cmd = Console.ReadLine().ToLower();
             switch (cmd)
             {
-                case "SRC":
                 case "src":
                     getSRC();
                     break;
+                /*************************/
+
+                case "dir":
+                    getDIR();
+                    break;
+                /*************************/
+
+                case "fltr":
+                    getFLTR();
+                    break;
+                /*************************/
+
+
+
 
                 case "exit":
                 case "q":
@@ -104,9 +117,26 @@ namespace Davidix_Original_File_Downloader
         {
             Console.WriteLine("Enter Src");
             src = Console.ReadLine();
-            Console.WriteLine("src => "+src);
+            Console.WriteLine("Src => "+src);
             StartCLI();
         }
+
+        public static void getDIR()
+        {
+            Console.WriteLine("Enter Dir");
+            src = Console.ReadLine();
+            Console.WriteLine("Dir => " + dir);
+            StartCLI();
+        }
+
+        public static void getFLTR()
+        {
+            Console.WriteLine("Enter Fltr");
+            src = Console.ReadLine();
+            Console.WriteLine("Fltr => " + fltr);
+            StartCLI();
+        }
+
 
     }
     }
