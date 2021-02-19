@@ -14,7 +14,7 @@ namespace Davidix_Original_File_Downloader
         public static string dir, src, fltr;
         Helper clshp = new Helper();
 
-        string[] dlfiles, svfiles;
+        static string[] dlfiles, svfiles;
         public static void StartCLI()
         {
             Console.WriteLine("src - dir - fltr - dl");
@@ -33,6 +33,11 @@ namespace Davidix_Original_File_Downloader
 
                 case "fltr":
                     getFLTR();
+                    break;
+                /*************************/
+
+                case "dl":
+                    dl();
                     break;
                 /*************************/
 
@@ -75,8 +80,10 @@ namespace Davidix_Original_File_Downloader
             StartCLI();
         }
 
-        public void dl()
+        public static void dl()
         {
+            if (Directory.Exists(dir))
+                svfiles = clshp.GetDirFiles(dir, null, true, false, null);
             for (int i = 0; i < dlfiles.Length; i++)
                 clshp.Download((dlfiles[i]), svfiles[i]);
         }

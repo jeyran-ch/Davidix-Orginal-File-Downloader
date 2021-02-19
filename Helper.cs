@@ -47,7 +47,7 @@ namespace Davidix_Original_File_Downloader
                 return null;
         }
         
-        public async Task Download(string Uri,string Location)
+        public  async Task Download(string Uri,string Location)
         {
         _dlComplate = false;
             using (var webClient = new WebClient())
