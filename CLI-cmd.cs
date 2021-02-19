@@ -38,7 +38,6 @@ namespace Davidix_Original_File_Downloader
 
 
 
-
                 case "exit":
                 case "q":
                   
