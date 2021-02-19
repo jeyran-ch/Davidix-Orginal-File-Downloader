@@ -98,7 +98,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
-    <Content Include="logo_FBC_icon.ico" />
     <Content Include="mzl_qmdbcnxz_UuN_icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
