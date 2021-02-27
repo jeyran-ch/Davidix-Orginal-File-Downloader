@@ -40,11 +40,9 @@ namespace Davidix_Original_File_Downloader
                 C_Dl_state(true);
             else
                 C_Dl_state(false);
-
-        
         }
 
-        
+        //help
 
         private void btnCopy_Click(object sender, EventArgs e)
         {
